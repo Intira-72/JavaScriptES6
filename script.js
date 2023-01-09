@@ -1,11 +1,7 @@
-// Block Scope (let / constant)
+// Arrow Function
 
-let x = 100;
-let y = 50;
+fullname = (fname, lname) => console.log(fname, lname);
+setAge = (age) => "Age: "+age;
 
-if(x===10){
-    let y = 500;    
-    console.log("y =", y);
-};
-
-console.log("y =", y);
+fullname("Kong", "Ruksiam")
+console.log(setAge(32));
