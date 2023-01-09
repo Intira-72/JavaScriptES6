@@ -1,7 +1,16 @@
-// Arrow Function
+// Object
 
-fullname = (fname, lname) => console.log(fname, lname);
-setAge = (age) => "Age: "+age;
+const username = "KongRuksiam"
+const age = 32
+const address = "Bangkok"
 
-fullname("Kong", "Ruksiam")
-console.log(setAge(32));
+const customer = {
+    cusName: username,
+    age,
+    address
+}
+
+console.log(customer);
+console.log("Username:", customer.cusName);
+console.log("Age:", customer.age);
+console.log("Address:", customer.address);
