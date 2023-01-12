@@ -1,10 +1,12 @@
-// String
+// Spread Operator
 
-let cusName = "เด็กชายโจโจ้"
-let phoneNumber = "000-000-0000"
+const newArr = [100, 200, 300]
+const data = [10, 20, ...newArr]
 
-const addr = `ชื่อลูกค้า : ${cusName}
-ที่อยู่ : 555/100 ถนนเสนา อำเภอเมือง จังหวัดเรียนดี
-เบอร์ติดต่อ : ${phoneNumber}`
+const colors = ["Green", "Blue", "White"]
+const allColors = ["Red", "Yellow", ...colors]
+const newColors = ["Black", "Gray"]
 
-console.log(addr);
+allColors.push(...newColors)
+
+console.log(allColors);
