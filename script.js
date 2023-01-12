@@ -1,16 +1,10 @@
-// Object
+// String
 
-const username = "KongRuksiam"
-const age = 32
-const address = "Bangkok"
+let cusName = "เด็กชายโจโจ้"
+let phoneNumber = "000-000-0000"
 
-const customer = {
-    cusName: username,
-    age,
-    address
-}
+const addr = `ชื่อลูกค้า : ${cusName}
+ที่อยู่ : 555/100 ถนนเสนา อำเภอเมือง จังหวัดเรียนดี
+เบอร์ติดต่อ : ${phoneNumber}`
 
-console.log(customer);
-console.log("Username:", customer.cusName);
-console.log("Age:", customer.age);
-console.log("Address:", customer.address);
+console.log(addr);
