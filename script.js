@@ -1,12 +1,11 @@
-// Spread Operator
+// Rest Parameter
 
-const newArr = [100, 200, 300]
-const data = [10, 20, ...newArr]
+const sumation = (...numbers) => {
+    let total = 0;
+    for(let number of numbers){
+        total += number
+    };
+    return total;
+};
 
-const colors = ["Green", "Blue", "White"]
-const allColors = ["Red", "Yellow", ...colors]
-const newColors = ["Black", "Gray"]
-
-allColors.push(...newColors)
-
-console.log(allColors);
+console.log(sumation(10, 20, 30, 40, 50, 60));
