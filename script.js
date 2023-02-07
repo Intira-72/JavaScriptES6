@@ -1,18 +1,14 @@
-// Destructuring
+// Default Parameter
 
-// Array
-const colors = ["green", "red", "yellow"]
-const [g, r, y] = colors
-const[,,ye] = colors
+const getDataCustomer = (customerName, customerAddress="None") => {
+    const addr = `Customer Name: ${customerName}
+Address: ${customerAddress}`
 
+    return addr
+};
 
-//Object
-const product = {
-    productName: "Computer",
-    price: 30000,
-    stock: 10
-}
+const kong = getDataCustomer("Kong", "Bangkok")
+const jojo = getDataCustomer("Jojo")
 
-const {productName, price, stock} = product
-
-console.log(productName)
+console.log(kong)
+console.log(jojo)
