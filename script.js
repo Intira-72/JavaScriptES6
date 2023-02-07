@@ -1,14 +1,11 @@
-// Default Parameter
+// join, concat
 
-const getDataCustomer = (customerName, customerAddress="None") => {
-    const addr = `Customer Name: ${customerName}
-Address: ${customerAddress}`
+const data = [100, 200, 300]
+const dataT = [400, 500]
+console.log(data)
 
-    return addr
-};
+const result = data.join("-")
+console.log(result)
 
-const kong = getDataCustomer("Kong", "Bangkok")
-const jojo = getDataCustomer("Jojo")
-
-console.log(kong)
-console.log(jojo)
+const allData = data.concat(dataT)
+console.log(allData )
