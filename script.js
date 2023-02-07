@@ -1,11 +1,18 @@
-// Rest Parameter
+// Destructuring
 
-const sumation = (...numbers) => {
-    let total = 0;
-    for(let number of numbers){
-        total += number
-    };
-    return total;
-};
+// Array
+const colors = ["green", "red", "yellow"]
+const [g, r, y] = colors
+const[,,ye] = colors
 
-console.log(sumation(10, 20, 30, 40, 50, 60));
+
+//Object
+const product = {
+    productName: "Computer",
+    price: 30000,
+    stock: 10
+}
+
+const {productName, price, stock} = product
+
+console.log(productName)
