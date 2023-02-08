@@ -1,20 +1,12 @@
-// For Loop, ForEach, ForOf
+// indexOf, find, findIndex
 
-const data = [10, 20, 30, 40, 50]
+const colors = ["Red", "Green", "Blue", "Purple", "White"]
 
-// for(let i=0; i<data.length; i++){
-//     if (data[i] > 30) break
-//     console.log(data[i])
-// }
+console.log(`Red is index ${colors.indexOf("Red")}`)
+console.log(`Blue is index ${colors.indexOf("Blue")}`)
 
-// let total = 0
-// data.forEach(i => {
-//     total += i
-// })
-// console.log(total)
+console.log(`findIndex Green in colors : ${colors.findIndex(e => e==="Green")}`)
 
+console.log(colors.find(e => e==="Green"))
+console.log(colors.find(e => e==="Black"))
 
-for (const e of data){
-    if (e > 30) break
-    console.log(e)
-}
