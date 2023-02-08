@@ -13,5 +13,5 @@ const employees = [
     {name: "Joy", salary: 12000, department: "Apprentice"},
 ]
 
-const result_emp = employees.filter(e => e.department === "Apprentice")
+const result_emp = employees.filter(e => e.department === "Marketing").filter(e => e.salary > 30000)
 console.log(result_emp)
