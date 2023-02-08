@@ -1,10 +1,20 @@
-// splice, slice
+// For Loop, ForEach, ForOf
 
 const data = [10, 20, 30, 40, 50]
-console.log("Before :", data)
 
-data.splice(1, 3, ...[80, 90, 100])
-console.log(".splice(1, 3) :", data)
+// for(let i=0; i<data.length; i++){
+//     if (data[i] > 30) break
+//     console.log(data[i])
+// }
 
-const new_data = data.slice(1, 3)
-console.log(".slice(1, 3)", new_data)
+// let total = 0
+// data.forEach(i => {
+//     total += i
+// })
+// console.log(total)
+
+
+for (const e of data){
+    if (e > 30) break
+    console.log(e)
+}
