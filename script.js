@@ -1,16 +1,10 @@
-// push, pop, shift, unshift
+// splice, slice
 
-const data = [10, 20, 30]
-console.log("Before:", data)
+const data = [10, 20, 30, 40, 50]
+console.log("Before :", data)
 
-data.push(...[500, 1000, 2000])
-console.log(".push(...[500, 1000, 2000]) :", data)
+data.splice(1, 3, ...[80, 90, 100])
+console.log(".splice(1, 3) :", data)
 
-data.pop()
-console.log(".pop() :", data)
-
-data.shift()
-console.log(".shift() :", data)
-
-data.unshift(1200)
-console.log(".unshift() :", data)
+const new_data = data.slice(1, 3)
+console.log(".slice(1, 3)", new_data)
